@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<title>Projeto Tec. WEB</title>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.8/FileSaver.min.js"></script> 
+	<script type="text/javascript" src="main.js"></script>
+
+</head>
+
+
+<body bgcolor="white">
+
+
+	<form>
+
+		<div class="teste"><h2>Cadastro</h2></div>
+
+		<div align="center">
+
+			<p>
+				<input onclick="nome=prompt('Nome: ','');" type="button" value="Digitar Nome">
+				<input onclick="email=prompt('E-mail: ','');" type="button" value="Digitar E-mail"> 
+				<input onclick="confirmadados(this.form.Area)" type="button" value="Cadastrar">
+				<input onclick="ValidaSave(this.form.Area)" type="button" value="Salvar dados">
+			</p>
+			<textarea id="textocaixa" readonly="readonly" rows="10" cols="40" name=Area></textarea>
+			<img onclick="limpaCadastro()" title="Clique para limpar o Cadastro" id="iconlimpar" src="https://1.bp.blogspot.com/-c3EPFOK6-ak/XK0oYkyTXcI/AAAAAAABOsg/Cdf62nRLMgUfdOUgd_L_95gxBUyyl9jTgCKgBGAs/s1600/Image%2B952.png">
+
+		</div>
+
+	</form>
+
+
+	<div align="center">
+			
+		<!-- script inline de data (dia, mes e ano) -->
+
+		<script>
+				
+			hoje = new Date();
+			dia = hoje.getDate();
+			mes = hoje.getMonth() + 1;
+			ano = hoje.getYear() + 1900;
+			var exc = "";
+			var exc2 = "";
+
+			if (dia < 10) {
+				exc = "0";
+			}
+				
+			if (mes < 10) {
+				exc2 = "0";
+			}
+
+			document.write("<p>Hoje: " + exc, dia + "/" + exc2, mes + "/" + ano + "</p>");
+
+		</script>
+
+		<!-- #script inline de data (dia, mes e ano) -->
+
+	</div>
+	
+
+</body>
+
+</html>

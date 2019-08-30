@@ -1,0 +1,67 @@
+		p{
+			color: black;
+			font-family: Arial;
+			font-size: 20px;
+			font-weight: 900;
+		}
+
+		h2{
+			font-family: Arial;
+			font-size: 40px;
+			display: inline;
+			background-color: white;
+			border-radius: 20px;
+			padding: 0px 175px;
+		}
+
+		textarea{
+			resize: none;
+			background-color: white;
+			border-color: black;
+			border-style: solid;
+			border-radius: 10px;
+			width: 520px;
+			height: 280px;
+			font-family: Arial Black;
+			font-size: 15px;
+		}
+
+		body{
+			margin: 0px 0px;
+			background-color: #c1cdc1;
+
+		}
+
+		input[type=button]{
+			border-style: none;
+			background-color: #1e90ff;
+			padding: 8px;
+			font-family: Arial;
+			font-size: 20px;
+			border-radius: 10px;
+			clear: both;
+			cursor: pointer;
+		}
+
+		input[type=button]:hover{
+			background-color: #00bfff;
+
+		}
+
+		input[type=button]:active{
+			background-color: #6A5ACD;
+			position: relative;
+			top: 2px;
+		}
+
+		.teste{
+			margin: 20px auto;
+			text-align: center;
+		}
+
+		#iconlimpar{
+			cursor: pointer;
+			position: absolute;
+			top: 280px;
+			padding-left: 10px;
+		}
